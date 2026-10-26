@@ -1,0 +1,59 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{primary}{RGB}{30, 58, 138}
+
+\title{\textbf{\color{primary} Short Document Title}}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a clean, single-page LaTeX document structured using standard article formatting. It is designed to be fully self-contained and ready for compilation.
+
+\section{Key Concepts}
+Below is a simple mathematical formulation using standard \LaTeX\ notation:
+
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+\subsection{Summary Table}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{llr}
+        \toprule
+        \textbf{Item} & \textbf{Category} & \textbf{Value (\$)} \\
+        \midrule
+        Alpha & Component & 1,200 \\
+        Beta & Module & 850 \\
+        Gamma & Service & 430 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Overview of project items.}
+\end{table}
+
+\section{Visual Placeholder}
+Since external images cannot be embedded directly, a standard box placeholder can be used for figures:
+
+\vspace{0.5cm}
+\begin{center}
+    \framebox{\parbox{0.8\textwidth}{\centering \vspace{1.5cm} \textit{[ Image / Figure Placeholder ]} \vspace{1.5cm}}}
+\end{center}
+\vspace{0.5cm}
+
+\section{Conclusion}
+This standard template provides a foundation for technical documents, reports, or short academic papers.
+
+\end{document}
